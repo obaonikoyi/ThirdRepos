@@ -39,6 +39,7 @@
             this.radBackStall = new System.Windows.Forms.RadioButton();
             this.cmdCalculate = new System.Windows.Forms.Button();
             this.radGeneral = new System.Windows.Forms.RadioButton();
+            this.chkChild = new System.Windows.Forms.CheckBox();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -84,6 +85,7 @@
             this.chkDiscount.TabIndex = 5;
             this.chkDiscount.Text = "Senior / Student";
             this.chkDiscount.UseVisualStyleBackColor = true;
+            this.chkDiscount.CheckedChanged += new System.EventHandler(this.chkDiscount_CheckedChanged);
             // 
             // radBalcony
             // 
@@ -94,6 +96,19 @@
             this.radBalcony.TabIndex = 6;
             this.radBalcony.Text = "Balcony";
             this.radBalcony.UseVisualStyleBackColor = true;
+            // 
+            this.radGeneral.UseVisualStyleBackColor = true;
+            // radGeneral
+            // 
+            this.radGeneral.AutoSize = true;
+            this.radGeneral.Checked = true;
+            this.radGeneral.Location = new System.Drawing.Point(26, 40);
+            this.radGeneral.Name = "radGeneral";
+            this.radGeneral.Size = new System.Drawing.Size(62, 17);
+            this.radGeneral.TabIndex = 7;
+            this.radGeneral.TabStop = true;
+            this.radGeneral.Text = "General";
+            this.radGeneral.UseVisualStyleBackColor = true;
             // 
             // radBox
             // 
@@ -151,11 +166,23 @@
             this.radGeneral.Text = "General";
             this.radGeneral.UseVisualStyleBackColor = true;
             // 
+            // chkChild
+            // 
+            this.chkChild.AutoSize = true;
+            this.chkChild.Location = new System.Drawing.Point(261, 95);
+            this.chkChild.Name = "chkChild";
+            this.chkChild.Size = new System.Drawing.Size(49, 17);
+            this.chkChild.TabIndex = 11;
+            this.chkChild.Text = "Child";
+            this.chkChild.UseVisualStyleBackColor = true;
+            this.chkChild.CheckedChanged += new System.EventHandler(this.chkChild_CheckedChanged);
+            // 
             // TicketsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(608, 445);
+            this.Controls.Add(this.chkChild);
             this.Controls.Add(this.cmdCalculate);
             this.Controls.Add(this.grpSection);
             this.Controls.Add(this.chkDiscount);
@@ -186,6 +213,7 @@
         private System.Windows.Forms.Button cmdCalculate;
         private System.Windows.Forms.RadioButton radBackStall;
         private System.Windows.Forms.RadioButton radGeneral;
+        private System.Windows.Forms.CheckBox chkChild;
     }
 }
 
