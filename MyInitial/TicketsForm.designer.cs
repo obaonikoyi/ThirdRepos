@@ -34,11 +34,11 @@
             this.lblAmount = new System.Windows.Forms.Label();
             this.chkDiscount = new System.Windows.Forms.CheckBox();
             this.radBalcony = new System.Windows.Forms.RadioButton();
-            this.radGeneral = new System.Windows.Forms.RadioButton();
             this.radBox = new System.Windows.Forms.RadioButton();
             this.grpSection = new System.Windows.Forms.GroupBox();
+            this.radBackStall = new System.Windows.Forms.RadioButton();
             this.cmdCalculate = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.radGeneral = new System.Windows.Forms.RadioButton();
             this.grpSection.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,19 +95,6 @@
             this.radBalcony.Text = "Balcony";
             this.radBalcony.UseVisualStyleBackColor = true;
             // 
-            // radGeneral
-            // 
-            this.radGeneral.AutoSize = true;
-            this.radGeneral.Checked = true;
-            this.radGeneral.Location = new System.Drawing.Point(26, 40);
-            this.radGeneral.Name = "radGeneral";
-            this.radGeneral.Size = new System.Drawing.Size(62, 17);
-            this.radGeneral.TabIndex = 7;
-            this.radGeneral.TabStop = true;
-            this.radGeneral.Text = "General";
-            this.radGeneral.UseVisualStyleBackColor = true;
-            this.radGeneral.CheckedChanged += new System.EventHandler(this.radGeneral_CheckedChanged);
-            // 
             // radBox
             // 
             this.radBox.AutoSize = true;
@@ -120,9 +107,9 @@
             // 
             // grpSection
             // 
-            this.grpSection.Controls.Add(this.radioButton1);
-            this.grpSection.Controls.Add(this.radBox);
             this.grpSection.Controls.Add(this.radGeneral);
+            this.grpSection.Controls.Add(this.radBackStall);
+            this.grpSection.Controls.Add(this.radBox);
             this.grpSection.Controls.Add(this.radBalcony);
             this.grpSection.Location = new System.Drawing.Point(52, 141);
             this.grpSection.Name = "grpSection";
@@ -130,6 +117,17 @@
             this.grpSection.TabIndex = 9;
             this.grpSection.TabStop = false;
             this.grpSection.Text = "Section";
+            // 
+            // radBackStall
+            // 
+            this.radBackStall.AutoSize = true;
+            this.radBackStall.Location = new System.Drawing.Point(26, 87);
+            this.radBackStall.Name = "radBackStall";
+            this.radBackStall.Size = new System.Drawing.Size(73, 17);
+            this.radBackStall.TabIndex = 9;
+            this.radBackStall.TabStop = true;
+            this.radBackStall.Text = "Ball Stack";
+            this.radBackStall.UseVisualStyleBackColor = true;
             // 
             // cmdCalculate
             // 
@@ -141,16 +139,17 @@
             this.cmdCalculate.UseVisualStyleBackColor = true;
             this.cmdCalculate.Click += new System.EventHandler(this.cmdCalculate_Click);
             // 
-            // radioButton1
+            // radGeneral
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(26, 87);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(73, 17);
-            this.radioButton1.TabIndex = 9;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Ball Stack";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radGeneral.AutoSize = true;
+            this.radGeneral.Checked = true;
+            this.radGeneral.Location = new System.Drawing.Point(26, 40);
+            this.radGeneral.Name = "radGeneral";
+            this.radGeneral.Size = new System.Drawing.Size(62, 17);
+            this.radGeneral.TabIndex = 10;
+            this.radGeneral.TabStop = true;
+            this.radGeneral.Text = "General";
+            this.radGeneral.UseVisualStyleBackColor = true;
             // 
             // TicketsForm
             // 
@@ -182,11 +181,11 @@
         private System.Windows.Forms.Label lblAmount;
         private System.Windows.Forms.CheckBox chkDiscount;
         private System.Windows.Forms.RadioButton radBalcony;
-        private System.Windows.Forms.RadioButton radGeneral;
         private System.Windows.Forms.RadioButton radBox;
         private System.Windows.Forms.GroupBox grpSection;
         private System.Windows.Forms.Button cmdCalculate;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radBackStall;
+        private System.Windows.Forms.RadioButton radGeneral;
     }
 }
 
